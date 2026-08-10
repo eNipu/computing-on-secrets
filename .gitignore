@@ -1,0 +1,6 @@
+__pycache__/
+media/
+.cache/
+venv/
+.venv/
+.DS_Store

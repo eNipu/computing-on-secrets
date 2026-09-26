@@ -1,4 +1,4 @@
-"""S03 - Coefficients live on a clock (arithmetic mod t).
+"""S03 - Coefficients live on a clock (arithmetic mod q for ciphertexts, mod t for plaintexts).
 
 A 24-hour clock: adding 6 hours to 21 lands on 3. Then show the negative
 representation, where the same points can be labelled -11..12.
@@ -11,7 +11,7 @@ from theme import MSG, NOISE
 
 class ModClockTorus(Scene):
     def construct(self):
-        title = Text("Numbers on a clock  (mod t)", font_size=40).to_edge(UP)
+        title = Text("Numbers on a clock  (mod q, or mod t)", font_size=40).to_edge(UP)
         self.play(Write(title))
 
         n = 24
